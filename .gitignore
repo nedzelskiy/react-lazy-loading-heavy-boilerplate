@@ -1,0 +1,8 @@
+.idea
+node_modules/
+logs/
+site/static/js/
+site/static/css/
+site/static/manifest.json
+site/client/**/*.css
+site/client/**/*.map

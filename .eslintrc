@@ -1,0 +1,50 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true,
+        "modules": true
+    }
+  },
+  "plugins": [
+    "react"
+  ],
+  "settings": {
+    "react": {
+      "pragma": "React"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "src"
+        ]
+      }
+    }
+  },
+  "rules": {
+    "arrow-body-style": [2, "always"],
+    "react/sort-comp": [0],
+    "no-plusplus": [0, {
+      "allowForLoopAfterthoughts": true
+    }],
+    "import/no-dynamic-require": "off",
+    "react/jsx-filename-extension": "off",
+    "no-underscore-dangle": "off",
+    "import/no-named-as-default": "off",
+    "react/no-array-index-key": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-boolean-value": [0],
+    "react/destructuring-assignment": "off",
+    "react/prefer-stateless-function": ["error", { "ignorePureComponents": true }],
+    "no-use-before-define": "off",
+    "class-methods-use-this": "off",
+    "react/jsx-no-bind": [2, { "allowArrowFunctions": true }]
+  }
+}
